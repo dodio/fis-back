@@ -1,0 +1,23 @@
+{
+  "name": "fis-back",
+  "version": "1.0.0",
+  "description": "a node project scaffold",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "files": [
+    "index.js"
+  ],
+  "author": "",
+  "license": "MIT"
+}

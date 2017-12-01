@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>react demo</title>
+    
+</head>
+<body>
+	<div id="app"></div>
+<script src="/public/mod.js"></script>
+<script type="text/javascript">/*resourcemap*/
+require.resourceMap({
+  "res": {
+    "node_modules/object-assign/index": {
+      "url": "/public/__thirdparty__/object-assign/index.js",
+      "type": "js"
+    },
+    "node_modules/fbjs/lib/emptyObject": {
+      "url": "/public/__thirdparty__/fbjs/lib/emptyObject.js",
+      "type": "js"
+    },
+    "node_modules/fbjs/lib/emptyFunction": {
+      "url": "/public/__thirdparty__/fbjs/lib/emptyFunction.js",
+      "type": "js"
+    },
+    "node_modules/react/cjs/react.production.min": {
+      "url": "/public/__thirdparty__/react/cjs/react.production.min.js",
+      "type": "js",
+      "deps": [
+        "node_modules/object-assign/index",
+        "node_modules/fbjs/lib/emptyObject",
+        "node_modules/fbjs/lib/emptyFunction"
+      ]
+    },
+    "node_modules/fbjs/lib/invariant": {
+      "url": "/public/__thirdparty__/fbjs/lib/invariant.js",
+      "type": "js"
+    },
+    "node_modules/fbjs/lib/warning": {
+      "url": "/public/__thirdparty__/fbjs/lib/warning.js",
+      "type": "js",
+      "deps": [
+        "node_modules/fbjs/lib/emptyFunction"
+      ]
+    },
+    "node_modules/prop-types/lib/ReactPropTypesSecret": {
+      "url": "/public/__thirdparty__/prop-types/lib/ReactPropTypesSecret.js",
+      "type": "js"
+    },
+    "node_modules/prop-types/checkPropTypes": {
+      "url": "/public/__thirdparty__/prop-types/checkPropTypes.js",
+      "type": "js",
+      "deps": [
+        "node_modules/fbjs/lib/invariant",
+        "node_modules/fbjs/lib/warning",
+        "node_modules/prop-types/lib/ReactPropTypesSecret"
+      ]
+    },
+    "node_modules/react/cjs/react.development": {
+      "url": "/public/__thirdparty__/react/cjs/react.development.js",
+      "type": "js",
+      "deps": [
+        "node_modules/object-assign/index",
+        "node_modules/fbjs/lib/emptyObject",
+        "node_modules/fbjs/lib/invariant",
+        "node_modules/fbjs/lib/warning",
+        "node_modules/fbjs/lib/emptyFunction",
+        "node_modules/prop-types/checkPropTypes"
+      ]
+    },
+    "node_modules/react/index": {
+      "url": "/public/__thirdparty__/react/index.js",
+      "type": "js",
+      "deps": [
+        "node_modules/react/cjs/react.production.min",
+        "node_modules/react/cjs/react.development"
+      ]
+    },
+    "node_modules/fbjs/lib/ExecutionEnvironment": {
+      "url": "/public/__thirdparty__/fbjs/lib/ExecutionEnvironment.js",
+      "type": "js"
+    },
+    "node_modules/fbjs/lib/EventListener": {
+      "url": "/public/__thirdparty__/fbjs/lib/EventListener.js",
+      "type": "js",
+      "deps": [
+        "node_modules/fbjs/lib/emptyFunction"
+      ]
+    },
+    "node_modules/fbjs/lib/getActiveElement": {
+      "url": "/public/__thirdparty__/fbjs/lib/getActiveElement.js",
+      "type": "js"
+    },
+    "node_modules/fbjs/lib/shallowEqual": {
+      "url": "/public/__thirdparty__/fbjs/lib/shallowEqual.js",
+      "type": "js"
+    },
+    "node_modules/fbjs/lib/isNode": {
+      "url": "/public/__thirdparty__/fbjs/lib/isNode.js",
+      "type": "js"
+    },
+    "node_modules/fbjs/lib/isTextNode": {
+      "url": "/public/__thirdparty__/fbjs/lib/isTextNode.js",
+      "type": "js",
+      "deps": [
+        "node_modules/fbjs/lib/isNode"
+      ]
+    },
+    "node_modules/fbjs/lib/containsNode": {
+      "url": "/public/__thirdparty__/fbjs/lib/containsNode.js",
+      "type": "js",
+      "deps": [
+        "node_modules/fbjs/lib/isTextNode"
+      ]
+    },
+    "node_modules/fbjs/lib/focusNode": {
+      "url": "/public/__thirdparty__/fbjs/lib/focusNode.js",
+      "type": "js"
+    },
+    "node_modules/react-dom/cjs/react-dom.production.min": {
+      "url": "/public/__thirdparty__/react-dom/cjs/react-dom.production.min.js",
+      "type": "js",
+      "deps": [
+        "node_modules/react/index",
+        "node_modules/fbjs/lib/ExecutionEnvironment",
+        "node_modules/object-assign/index",
+        "node_modules/fbjs/lib/emptyFunction",
+        "node_modules/fbjs/lib/EventListener",
+        "node_modules/fbjs/lib/getActiveElement",
+        "node_modules/fbjs/lib/shallowEqual",
+        "node_modules/fbjs/lib/containsNode",
+        "node_modules/fbjs/lib/focusNode",
+        "node_modules/fbjs/lib/emptyObject"
+      ]
+    },
+    "node_modules/fbjs/lib/hyphenate": {
+      "url": "/public/__thirdparty__/fbjs/lib/hyphenate.js",
+      "type": "js"
+    },
+    "node_modules/fbjs/lib/hyphenateStyleName": {
+      "url": "/public/__thirdparty__/fbjs/lib/hyphenateStyleName.js",
+      "type": "js",
+      "deps": [
+        "node_modules/fbjs/lib/hyphenate"
+      ]
+    },
+    "node_modules/fbjs/lib/camelize": {
+      "url": "/public/__thirdparty__/fbjs/lib/camelize.js",
+      "type": "js"
+    },
+    "node_modules/fbjs/lib/camelizeStyleName": {
+      "url": "/public/__thirdparty__/fbjs/lib/camelizeStyleName.js",
+      "type": "js",
+      "deps": [
+        "node_modules/fbjs/lib/camelize"
+      ]
+    },
+    "node_modules/react-dom/cjs/react-dom.development": {
+      "url": "/public/__thirdparty__/react-dom/cjs/react-dom.development.js",
+      "type": "js",
+      "deps": [
+        "node_modules/react/index",
+        "node_modules/fbjs/lib/invariant",
+        "node_modules/fbjs/lib/warning",
+        "node_modules/fbjs/lib/ExecutionEnvironment",
+        "node_modules/object-assign/index",
+        "node_modules/fbjs/lib/emptyFunction",
+        "node_modules/fbjs/lib/EventListener",
+        "node_modules/fbjs/lib/getActiveElement",
+        "node_modules/fbjs/lib/shallowEqual",
+        "node_modules/fbjs/lib/containsNode",
+        "node_modules/fbjs/lib/focusNode",
+        "node_modules/fbjs/lib/emptyObject",
+        "node_modules/prop-types/checkPropTypes",
+        "node_modules/fbjs/lib/hyphenateStyleName",
+        "node_modules/fbjs/lib/camelizeStyleName"
+      ]
+    },
+    "node_modules/react-dom/index": {
+      "url": "/public/__thirdparty__/react-dom/index.js",
+      "type": "js",
+      "deps": [
+        "node_modules/react-dom/cjs/react-dom.production.min",
+        "node_modules/react-dom/cjs/react-dom.development"
+      ]
+    },
+    "share/area": {
+      "url": "/public/area.js",
+      "type": "js"
+    },
+    "src/reactApp.jsx": {
+      "url": "/public/reactApp.js",
+      "type": "js",
+      "deps": [
+        "node_modules/react/index",
+        "share/area"
+      ]
+    }
+  },
+  "pkg": {}
+});
+'use strict';
+
+require.async(['node_modules/react-dom/index','node_modules/react/index','src/reactApp.jsx'], function (_ref, React, _ref2) {
+	var render = _ref.render;
+	var App = _ref2.default;
+
+	render(React.createElement(App, null), document.getElementById('app'));
+});</script>
+<script type="text/javascript" charset="utf-8" src="http://127.0.0.1:8132/livereload.js"></script></body>
+</html>

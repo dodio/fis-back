@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>react demo</title>
+	<script src="/mod.js"></script>
+</head>
+<body>
+	<div id="app"></div>
+	<script type="text/x-jsx">
+		require.async(['react-dom', 'react', './reactApp'], ({render}, React, {default: App}) => {
+			render(<App/>, document.getElementById('app'));
+		})
+	</script>
+</body>
+</html>
