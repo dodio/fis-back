@@ -16,13 +16,7 @@ const path = require('path');
 	主要是commonjs和nodule_modules模块化加载
 **/
 fis.hook('commonjs', {
-  extList: ['.js', '.jsx', '.es', '.ts', '.tsx', '.vue'],
-  packages: [
-    {
-      name: 'share',
-      location: path.resolve(__dirname, '../share')
-    }
-  ]
+  extList: ['.js', '.jsx', '.es', '.ts', '.tsx', '.vue']
 })
 
 fis.hook('node_modules')

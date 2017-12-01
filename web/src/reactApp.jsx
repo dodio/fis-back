@@ -1,5 +1,5 @@
 import React from 'react';
-import area from 'share/area';
+import area from '/share/area';
 
 export default class App extends React.Component {
 	constructor(props) {
