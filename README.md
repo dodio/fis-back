@@ -32,13 +32,16 @@ npm run devServer
 ## 目录规范
 
 * dev_files
+
 浏览器端开发时构建的临时文件存放地，浏览器的文件分为由服务器端渲染文件和静态资源文件，开发模式时，server会加载其中的 public 和 view
 
 * server 
+
 这个是eggjs 的标准目录，可以配置一个加载器loader，用来加载 web里的share 文件夹内容。
 从而可以同步共享部分 服务器 与 浏览器共同的代码
 
 * web
+
 基于fis3搭建的，浏览器前端框架
 支持多入口
 vue单文件组件
