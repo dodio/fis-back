@@ -1,4 +1,4 @@
-fis.set('project.ignore', ['node_modules/**', 'output/**', '/build/**', '/package*.json', '/dev_server/**']);
+fis.set('project.ignore', ['node_modules/**', 'output/**', '/build/**', '/package*.json', '/dev_server/**', '/dist/**', '/*.md']);
 fis.set('project.fileType.text', 'nj, jsx, vue');
 fis.require('parser-babel6').parser = require('babel-core');
 
