@@ -26,6 +26,10 @@ cli.launch({
   }
 
   var fis = require('fis3');
+  var cmdName = argv._[0];
+  if (~['release', 'inspect'].indexOf(cmdName) && argv._[1]) {
+    fis.project.currentMedia(argv._[1]);
+  }
   require('./fis-conf');
   // 配置插件查找路径，优先查找本地项目里面的 node_modules
   fis.require.paths.unshift(path.join(env.cwd, 'node_modules'));

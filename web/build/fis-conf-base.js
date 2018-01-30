@@ -1,4 +1,4 @@
-fis.set('project.ignore', ['node_modules/**', 'output/**', '/build/**', '/package*.json', '/dev_server/**', '/dist/**', '/*.md']);
+fis.set('project.ignore', ['node_modules/**', 'output/**', '/build/**', '/dev_files/**', '/package*.json', '/dev_server/**', '/dist/**', '/*.md']);
 fis.set('project.fileType.text', 'nj, jsx, vue');
 fis.require('parser-babel6').parser = require('babel-core');
 
@@ -16,7 +16,10 @@ const path = require('path');
 	主要是commonjs和nodule_modules模块化加载
 **/
 fis.hook('commonjs', {
-  extList: ['.js', '.jsx', '.es', '.ts', '.tsx', '.vue']
+  extList: ['.js', '.jsx', '.es', '.ts', '.tsx', '.vue'],
+  baseUrl: './src',
+  paths: {
+  }
 })
 
 fis.hook('node_modules')
